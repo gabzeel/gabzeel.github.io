@@ -1,3 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+#Sublime files
+	gabzeel.sublime-project
+	gabzeel.sublime-workspace
