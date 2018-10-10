@@ -20,14 +20,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://localhost:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  
 
 #Footer settings
 footer_config:
   text: >
-    Feito para vocês com <a href="https://jekyllrb.com/">Jekyll</a>
+    Com carinho por Gabriel e <a href="https://jekyllrb.com/">Jekyll</a>
 
 # Build settings
 markdown: kramdown
@@ -35,14 +35,10 @@ theme:
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+permalink: /:categories:/:title
+
+#Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
